@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,400&family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    width: 100%;
+    min-height:92.7vh;
+    background: linear-gradient(185deg, #041650, rgba(4, 57, 61, 0.867));
+    padding: 2rem 9%;
+}
+.to_do_app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 5rem auto 2rem;
+    padding: 3rem  2rem 4rem;
+    border-radius: .5rem;
+}
+.to_do_app h2{
+    color:#002765 ;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.to_do_app h2 i{
+    padding: 0 12px;
+    color: grey;
+}
+.to_do_app .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+.to_do_app .row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 1rem;
+    font-weight: 500;
+}
+.to_do_app .row .btn{
+    border: none;
+    outline: none;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    background: rgb(255, 68, 0);
+    color: #fff;
+}
+.to_do_app ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    user-select: none;
+    padding: 1rem .9rem 1rem 3rem;
+    position: relative;
+}
+ul li::before{
+    content: " ";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("images/unchecked.png");
+    background-size: cover;
+    background-position:center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("images/checked.png");
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50% ;
+}
+ul li span:hover{
+    background: #edeef0;
+}
+
+/* footer Section styling */
+footer {
+    background: linear-gradient(185deg, #041650, rgba(4, 57, 61, 0.867));
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 12px 6px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* footer Section styling */
